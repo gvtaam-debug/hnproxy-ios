@@ -1,0 +1,19 @@
+name: HNProxyApp
+options:
+  bundleIdPrefix: io.hnproxy
+targets:
+  HNProxyApp:
+    type: application
+    platform: iOS
+    deploymentTarget: "17.0"
+    sources:
+      - AppDelegate.swift
+      - ViewController.swift
+    settings:
+      base:
+        INFOPLIST_KEY_UIApplicationSceneManifest_Generation: YES
+        INFOPLIST_KEY_UILaunchScreen_Generation: YES
+        INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone: UIInterfaceOrientationPortrait
+        INFOPLIST_KEY_CFBundleDisplayName: "HNProxy"
+        PRODUCT_BUNDLE_IDENTIFIER: io.hnproxy.webviewapp
+        GENERATE_INFOPLIST_FILE: YES
